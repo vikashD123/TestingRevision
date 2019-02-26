@@ -20,7 +20,13 @@ public class HandlingAction {
 	     
 	     Actions act=new Actions(driver);
 	     
-	     act.moveToElement(driver.findElement(By.id("email"))).click().keyDown(Keys.SHIFT).sendKeys("Vikash").doubleClick().build().perform();
+	     //To perform double click
+	     
+	  //   act.moveToElement(driver.findElement(By.id("email"))).click().keyDown(Keys.SHIFT).sendKeys("Vikash").doubleClick().build().perform();
+	     
+	     //To perform right click
+	     
+	     act.moveToElement(driver.findElement(By.id("email"))).click().keyDown(Keys.SHIFT).sendKeys("Vikash").contextClick().build().perform();
 	     
 	     Thread.sleep(3000);
 	     
